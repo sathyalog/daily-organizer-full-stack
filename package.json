@@ -30,6 +30,9 @@
     "webpack-dev-server": "^3.9.0"
   },
   "dependencies": {
+    "react": "^16.4.2",
+    "react-dom": "^16.5.0",
+    "react-redux": "^5.0.7",
     "redux": "^4.0.0"
   }
 }
