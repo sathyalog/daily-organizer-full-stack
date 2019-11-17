@@ -6,6 +6,10 @@ import uuid from 'uuid';
 export function* taskCreationSaga() {
     while(true) {
         const {groupID} = yield take(mutations.REQUEST_TASK_CREATION);
+        const ownerID = `U1`;
+        const taskID = uuid(); // to generate random id
+        //create a mutation for createTask mutation to add random id and inform the reducer
+        yield put(mutations.createTask(taskID,groupID,ownerID))
         console.log('Got groupID', groupID)
     }
 }
