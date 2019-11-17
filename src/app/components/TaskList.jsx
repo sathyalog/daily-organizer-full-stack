@@ -1,5 +1,6 @@
 import React from 'react';
 import {connect} from 'react-redux';
+import {requestTaskCreation} from '../store/mutations';
 
 export const TaskList = ({tasks,name,id,createNewTask}) => (
     <div>
@@ -20,10 +21,11 @@ const mapStateToProps = (state, ownProps) => {
     }
 }
 
-const mapDispatchToProps =(state, ownProps) => {
+const mapDispatchToProps =(dispatch, ownProps) => {
     return {
         createNewTask(id) {
             console.log('creating new task', id);
+            dispatch(requestTaskCreation(id))
         }
     }
 }
