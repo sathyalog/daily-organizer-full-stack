@@ -9,7 +9,7 @@
     "dev": "webpack-dev-server --open",
     "test-connect": "babel-node src/server/connect-db",
     "initialize": "babel-node src/server/initialize-db",
-    "server": "babel-node src/server/server"
+    "server": "babel-node src/server/server",
   },
   "keywords": [],
   "author": "Sathya",
