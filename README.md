@@ -8,4 +8,6 @@ application running at 8080 port
 
 Mongodb running at 27017
 
-node server running at 9999
+node server running at 9090
+
+Concurrently npm module used to enable power to run multiple scripts at a time. Here it is `npm run server` & `npm run dev`.

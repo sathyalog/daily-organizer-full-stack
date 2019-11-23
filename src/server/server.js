@@ -3,7 +3,7 @@ import cors from 'cors';
 import bodyParser from 'body-parser';
 import {connectDB} from './connect-db';
 
-let port = 9999;
+let port = 9090;
 let app = express();
 
 app.listen(port, console.log('Server listening', port));
