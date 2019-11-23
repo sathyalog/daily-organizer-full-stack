@@ -6,7 +6,9 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "webpack",
-    "dev": "webpack-dev-server --open"
+    "dev": "webpack-dev-server --open",
+    "test-connect":"babel-node src/server/connect-db",
+    "initialize": "babel-node src/server/initialize-db"
   },
   "keywords": [],
   "author": "Sathya",
