@@ -7,8 +7,9 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "webpack",
     "dev": "webpack-dev-server --open",
-    "test-connect":"babel-node src/server/connect-db",
-    "initialize": "babel-node src/server/initialize-db"
+    "test-connect": "babel-node src/server/connect-db",
+    "initialize": "babel-node src/server/initialize-db",
+    "server": "babel-node src/server/server"
   },
   "keywords": [],
   "author": "Sathya",
@@ -20,8 +21,11 @@
     "@babel/preset-react": "^7.0.0",
     "@babel/register": "^7.0.0",
     "babel-loader": "^8.0.2",
+    "body-parser": "^1.18.3",
     "concurrently": "^4.0.1",
+    "cors": "^2.8.4",
     "cross-env": "^5.2.0",
+    "express": "^4.16.3",
     "highground": "^1.0.3-beta",
     "jest": "^23.6.0",
     "mongodb": "^3.1.10",
